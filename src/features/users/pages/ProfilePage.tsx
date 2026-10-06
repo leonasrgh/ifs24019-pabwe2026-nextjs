@@ -207,11 +207,12 @@ function ProfilePage() {
 
           <form onSubmit={handleUpdateProfile} className="space-y-4">
             <div>
-              <label className="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+              <label htmlFor="profile-name-input" className="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
                 Nama Lengkap
               </label>
               <input
                 type="text"
+                id="profile-name-input"
                 data-testid="profile-name-input"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -221,11 +222,12 @@ function ProfilePage() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+              <label htmlFor="profile-email-input" className="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
                 Alamat Email
               </label>
               <input
                 type="email"
+                id="profile-email-input"
                 data-testid="profile-email-input"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}

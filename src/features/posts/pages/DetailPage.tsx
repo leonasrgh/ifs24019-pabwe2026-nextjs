@@ -164,6 +164,7 @@ function DetailPage() {
 
   return (
     <div className="space-y-6 max-w-4xl mx-auto animate-in fade-in duration-300">
+      <h1 className="sr-only">Detail Postingan</h1>
       {/* Back button & owner actions */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <Link
