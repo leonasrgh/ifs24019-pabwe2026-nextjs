@@ -168,12 +168,12 @@ function HomePage() {
 
       {/* Posts */}
       {loadingPosts && filteredPosts.length === 0 ? (
-        <div className="bg-white rounded-2xl border border-slate-200/80 px-6 py-16 text-center text-slate-400">
+        <div className="bg-white rounded-2xl border border-slate-200/80 px-6 py-16 text-center text-slate-600">
           <IconLoader2 size={36} className="mx-auto text-indigo-600 animate-spin mb-2" />
           <p className="font-medium text-slate-600">Memuat postingan...</p>
         </div>
       ) : filteredPosts.length === 0 ? (
-        <div className="bg-white rounded-2xl border border-slate-200/80 px-6 py-16 text-center text-slate-400">
+        <div className="bg-white rounded-2xl border border-slate-200/80 px-6 py-16 text-center text-slate-600">
           <IconNews size={40} className="mx-auto text-slate-300 mb-2" />
           <p className="font-medium">Belum ada postingan yang cocok.</p>
         </div>
@@ -217,7 +217,7 @@ function HomePage() {
                       <p className="text-sm font-semibold text-slate-800 truncate">
                         {post.author?.name || "Pengguna"}
                       </p>
-                      <p className="text-xs text-slate-400">{formatDate(post.created_at)}</p>
+                      <p className="text-xs text-slate-600">{formatDate(post.created_at)}</p>
                     </div>
                   </div>
 

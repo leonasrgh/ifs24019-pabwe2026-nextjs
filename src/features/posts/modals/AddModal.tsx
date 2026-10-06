@@ -94,7 +94,7 @@ function AddModal({ show, onClose, isMe = false }) {
               className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm resize-none"
               required
             />
-            <p className="mt-1.5 text-xs text-slate-400">
+            <p className="mt-1.5 text-xs text-slate-600">
               Gambar cover dapat ditambahkan setelah postingan dipublikasikan.
             </p>
           </div>

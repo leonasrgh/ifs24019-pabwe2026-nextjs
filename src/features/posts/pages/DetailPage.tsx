@@ -122,6 +122,7 @@ function DetailPage() {
   if (!profile || !post) {
     return (
       <div className="flex flex-col items-center justify-center py-20">
+        <h1 className="sr-only">Memuat detail postingan...</h1>
         <div className="w-8 h-8 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin" />
       </div>
     );
@@ -242,7 +243,7 @@ function DetailPage() {
               <p data-testid="post-author-name" className="text-sm font-bold text-slate-800">
                 {post.author?.name || "Pengguna"}
               </p>
-              <p className="text-xs text-slate-400 inline-flex items-center gap-1">
+              <p className="text-xs text-slate-600 inline-flex items-center gap-1">
                 <IconCalendar size={13} />
                 {formatDate(post.created_at)}
               </p>
@@ -316,7 +317,7 @@ function DetailPage() {
         </form>
 
         {comments.length === 0 ? (
-          <p data-testid="no-comments" className="text-sm text-slate-400 text-center py-4">
+          <p data-testid="no-comments" className="text-sm text-slate-600 text-center py-4">
             Belum ada komentar. Jadilah yang pertama berkomentar!
           </p>
         ) : (
@@ -340,7 +341,7 @@ function DetailPage() {
                     <p className="text-sm text-slate-700 whitespace-pre-line break-words">
                       {item.comment}
                     </p>
-                    <p className="text-xs text-slate-400 mt-1">{formatDate(item.created_at)}</p>
+                    <p className="text-xs text-slate-600 mt-1">{formatDate(item.created_at)}</p>
                   </div>
                   {isMine && (
                     <button
